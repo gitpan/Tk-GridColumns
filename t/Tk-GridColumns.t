@@ -25,6 +25,8 @@ can_ok(
 		get_version
 		get_debuglevel
 		set_debuglevel
+		generate_header_cmd
+		generate_item_draw_cmd
 		new
 		get_opt
 		set_opt
@@ -33,6 +35,8 @@ can_ok(
 		get_data
 		set_data
 		add_row
+		get_item
+		get_head
 		get_weight
 		set_weight
 		get_grid

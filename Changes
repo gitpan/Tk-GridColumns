@@ -1,5 +1,18 @@
 Revision history for Perl extension Tk::GridColumns.
 
-0.05  Wed Jan 30 14:11:57 2008
+0.05  Wed Jan 30 14:11 2008
 	- original version; created by h2xs 1.23 with options
-		-b 5.8.8 -XA -n Tk::GridColumns
+		. -b 5.8.8
+		. -XA
+		. -n Tk::GridColumns
+0.07  Mon Feb 04 12:44 2008
+	- added 4 methods:
+		. generate_header_cmd()
+		. generate_item_draw_cmd()
+		. get_item()
+		. get_head()
+	- added 2 options
+		. -header_cmd
+		. -item_draw_cmd
+	- expanded tests ( a little )
+	- expanded documentation ( a little )
