@@ -5,48 +5,13 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 3;
-BEGIN { use_ok('Tk::GridColumns') };
+use Test;
+BEGIN { plan tests => 1 };
+use Tk::GridColumns;
+ok(1); # If we made it this far, we're ok.
 
 #########################
 
 # Insert your test code below, the Test::More module is use()ed here so read
 # its man page ( perldoc Test::More ) for help writing this test script.
 
-use Tk;
-
-my $mw = tkinit;
-
-my $gc = Tk::GridColumns->new( $mw );
-isa_ok($gc,'Tk::GridColumns');
-
-can_ok(
-	$gc => qw/
-		get_version
-		get_debuglevel
-		set_debuglevel
-		generate_header_cmd
-		generate_item_draw_cmd
-		new
-		get_opt
-		set_opt
-		get_header
-		set_header
-		get_data
-		set_data
-		add_row
-		get_item
-		get_head
-		get_weight
-		set_weight
-		get_grid
-		get_frame
-		del_header
-		del_items
-		draw_header
-		draw_items
-		refresh_header
-		refresh_items
-		refresh
-	/,
-);
